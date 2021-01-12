@@ -48,8 +48,7 @@ body {
     background: black;
     width: var(--displayw);
     height: var(--displayh);
-    color: white;
-    border: solid 1px white;
+    color: white;    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,11 +77,13 @@ body {
 /* STYLING CALCULATOR AND DISTRIBUTING CALCULATOR'S CHILD ELEMENTS USING GRID*/
 
 .calculator {
-    background: pink;
+    background: black;
     flex: 1; /*To give calculator as much room as possible while fixing screen's header at the top of the screen*/
     grid-template-columns: 1fr;    
     grid-gap: 20px;
 }
+
+/* STYLING RESULT CONTENT*/
 
 .calculator .result {
     font-size: 4em;
@@ -91,11 +92,16 @@ body {
     padding-top: 35px;
 }
 
+/* STYLING BUTTONS CONTAINER AND SETTING UP GRID CONTAINER*/
+
 .keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
+
 }
+
+/* STYLING BUTTONS */
 
 button {
     font-size: 2em;
@@ -108,4 +114,25 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
+
+.key-operator {
+    background: var(--orange);
+}
+.grey{
+    background: var(--lightgrey);
+    width: 55px;
+    height: 55px;
+
+    font-size: 1.7em;
+}
+
+.zero {
+    width: 120px;
+    border-radius: 55px;
+    justify-content: flex-start;
+    padding-left: 23px;
+    grid-column: 1 / 3;    
+}
+
