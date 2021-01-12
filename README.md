@@ -6,3 +6,6 @@ Things I've learned:
 3. How to create and use data-* type attributes to describe what each key does.
 4. How to make keyboard inputs work with the calculator.
 5. How to clean up the code.
+
+For the future:
+- Implement horizontal view.

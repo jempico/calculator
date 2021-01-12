@@ -3,6 +3,10 @@
 :root {
     --displayw: calc(375px/ 1.5);
     --displayh: calc(667px/1.5);
+    --darkgrey: #333333;
+    --lightgrey: #a1a1a1;
+    --orange: #f49a31;
+
 }
 * {
     box-sizing: border-box;
@@ -34,6 +38,8 @@ body {
     justify-content: center;
     align-items: flex-start;
     padding-top: 40px;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
+
 }
 
 /* SETTING IPHONE'S SCREEN DIMENSIONS, STYLING IT AND SETTING UP FLEXBOX SO AS TO FIX SCREEN'S HEADER AT THE TOP OF THE SCREEN*/
@@ -74,6 +80,32 @@ body {
 .calculator {
     background: pink;
     flex: 1; /*To give calculator as much room as possible while fixing screen's header at the top of the screen*/
+    grid-template-columns: 1fr;    
+    grid-gap: 20px;
+}
+
+.calculator .result {
+    font-size: 4em;
+    text-align: right;
+    padding: 10px;
+    padding-top: 35px;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+button {
+    font-size: 2em;
+    background: var(--darkgrey);
+    padding: 5px;
+    border-radius: 50%;
+    border: 0;
+    width: 1.7em;
+    height: 1.7em;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
