@@ -117,10 +117,10 @@ button {
     color: white;
 }
 
-.key-operator {
+.column{
     background: var(--orange);
 }
-.grey{
+.row{
     background: var(--lightgrey);
     width: 55px;
     height: 55px;
