@@ -1,12 +1,10 @@
-A calculator that functions and looks like an iPhone calculator.
+A calculator built with Vanilla JavaScript that functions and looks like an iPhone calculator (currently WIP);
 
 Things I've learned:
-1. How to access to custom data attributes (data-*) on elements with the dataset property.
-2. How to build the 'happy path':  what the average person would do when they pick up a calculator.
-2. How to layout the buttons and container combining flex and grid.
-3. How to create and use data-* type attributes to describe what each key does.
+1. How to design a program combining inmutable variables with custom data attributes.
+2. How inmutability helps writing simple, readable and predictable code.
+3. How to build the 'happy path':  what the average person would do when they pick up a calculator.
 4. How to clean up the code.
 
-For the future:
-- Implement horizontal view.
-- Make keyboard inputs work with the calculator.
+To be done:
+- Define different Edge Cases and solve them.
