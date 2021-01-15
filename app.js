@@ -1,25 +1,34 @@
 /*SELECTING DINAMIC ELEMENTS*/
 
 const calculator = document.querySelector('.calculator');
-const result = calculator.querySelector('.result');
+const display = document.querySelector('.result');
 const keys = calculator.querySelector('.keys');
 
 /*ADDING EVENT LISTENERS*/
 
 keys.addEventListener('click', calculate);
 
-/* DEFINING FUNCTIONS */
+
+/* DEFINING CONSTANTS IN THE LOCAL SCOPE OF THE CALCULATE FUNCTION*/
 
 function calculate(e){
+    //Grabbing button that has been clicked.
     const key = e.target
-    
-    // Using the data-action attribute to determine the type of key that is being clicked. 
-    const action = key.dataset.action; 
+
+    //Grabbing inner HTML content of the target button.
     const keyContent = key.textContent;
-    const display = document.querySelector('.result');
+
+    //Grabbing displayed number from the result div.
     const displayedNum = display.textContent;
+
+    // Using the data-action attribute to grab the type of operator associated with the button thas has been clicked (stored in key-opertor button). 
+    const action = key.dataset.action; 
+
+    // Grabbing the type of key that has been cliked before (data-attribute stored in calculator div);
     const previousKeyType = calculator.dataset.previousKeyType;
 
+
+/*STATEMENTS*/
 
     // If the element doesn't have a data-action attribute it must be a number.
     if (!action) {
